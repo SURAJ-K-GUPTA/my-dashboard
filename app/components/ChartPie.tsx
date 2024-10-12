@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { PieChart, Pie, Tooltip, ResponsiveContainer } from 'recharts';
 
 export const ChartPie = ({ data }: { data: any[] }) => (

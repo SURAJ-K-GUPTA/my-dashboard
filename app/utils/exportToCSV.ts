@@ -1,4 +1,5 @@
 // utils/exportToCSV.ts
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export const exportToCSV = (data: any[], fileName: string) => {
     const csvContent = [
       ["ID", "Name", "Value", "Category", "Created At"], // Headers

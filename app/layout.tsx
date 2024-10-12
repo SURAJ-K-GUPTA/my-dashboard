@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export const metadata = {
   title: 'My Dashboard',
   description: 'Interactive dashboard with Supabase, Recharts, and Next.js',
