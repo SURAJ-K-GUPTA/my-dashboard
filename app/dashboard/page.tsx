@@ -9,6 +9,7 @@ import { ChartBar } from '../components/ChartBar';
 import { ChartLine } from '../components/ChartLine';
 import { ChartPie } from '../components/ChartPie';
 import { exportToCSV } from '../utils/exportToCSV';
+import Link from 'next/link';
 
 interface Metric {
   id: number;
@@ -89,16 +90,16 @@ export default function Dashboard() {
           >
             <h2 className="text-lg font-bold mb-6 text-black dark:text-white">Navigation</h2>
             <ul className="space-y-4">
-              <li><a href="#" className="block py-2 hover:bg-gray-300 dark:hover:bg-gray-700 rounded-md px-2">Dashboard</a></li>
-              <li><a href="#" className="block py-2 hover:bg-gray-300 dark:hover:bg-gray-700 rounded-md px-2">Settings</a></li>
-              <li><a href="#" className="block py-2 hover:bg-gray-300 dark:hover:bg-gray-700 rounded-md px-2">Profile</a></li>
+              <li><Link href="#" className="block py-2 hover:bg-gray-300 dark:hover:bg-gray-700 rounded-md px-2">Dashboard</Link></li>
+              <li><Link href="#" className="block py-2 hover:bg-gray-300 dark:hover:bg-gray-700 rounded-md px-2">Settings</Link></li>
+              <li><Link href="#" className="block py-2 hover:bg-gray-300 dark:hover:bg-gray-700 rounded-md px-2">Profile</Link></li>
               <li>
-                <a
+                <Link
                   href="/"
                   className="block py-2 hover:bg-gray-300 dark:hover:bg-gray-700 rounded-md px-2"
                 >
                   Go to Main Page
-                </a>
+                </Link>
               </li>
               <li>
                 <button

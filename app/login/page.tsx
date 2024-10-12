@@ -1,6 +1,6 @@
 'use client';
 /* eslint-disable @typescript-eslint/no-explicit-any */
-
+import Link from 'next/link';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation'; // For programmatic navigation
 import { supabase } from '../supabaseClient';
@@ -62,9 +62,9 @@ export default function Login() {
 
         <p className="mt-4 text-center">
           Don’t have an account?{' '}
-          <a href="/signup" className="text-blue-500 hover:underline">
+          <Link href="/signup" className="text-blue-500 hover:underline">
             Sign up here
-          </a>
+          </Link>
         </p>
       </div>
     </div>
