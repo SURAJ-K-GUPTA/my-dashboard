@@ -6,8 +6,8 @@ import { useRouter } from 'next/navigation'; // For programmatic navigation
 import { supabase } from '../supabaseClient';
 
 export default function Login() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState('abcdef@example.com');
+  const [password, setPassword] = useState('123456');
   const [error, setError] = useState<string | null>(null);
   const router = useRouter();
 
